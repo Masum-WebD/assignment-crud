@@ -12,8 +12,8 @@ app.use(express.json());
 
 
 
-app.use("/user/all", userRouter)
-app.use("/random", userRouter)
+app.use("/user", userRouter)
+// app.use("/random", userRouter)
 
 app.get('/', (req,res)=>{
     res.send('First assignment ')
